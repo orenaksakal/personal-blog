@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `orek.io`,
+    title: `Js of things`,
     author: `Ören Aksakal`,
-    description: `Personal blog focused to Front-End web development.`,
+    description: `Personal blog focused to Front-End web development and all kinds of javascript`,
     siteUrl: `https://orek.netlify.com/`,
     social: {
       twitter: `orenaksakal`,
@@ -57,13 +57,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `orek`,
-        short_name: `orek`,
+        name: `jsofthings`,
+        short_name: `jsofthings`,
         start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#663399`,
+        background_color: `#111111`,
+        theme_color: `#111111`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-offline`,

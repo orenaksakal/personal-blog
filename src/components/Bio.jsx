@@ -33,7 +33,7 @@ function Bio() {
                 <a href={`https://twitter.com/${social.twitter}`}>{author}</a>.
               </strong>{' '}
               <br />
-              Front-end developer living and working in Warsaw
+              Front-end developer living and working in warsaw
             </p>
           </div>
         )
