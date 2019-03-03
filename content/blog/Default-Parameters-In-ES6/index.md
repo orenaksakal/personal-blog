@@ -6,11 +6,11 @@ date: '2019-03-03'
 
 #### **WHAT IS A PARAMETER ?**
 Parameter is a variable found in the **function definition**.
-In compilation phase when we are on the line of a function definition with a parameter 
+In compilation phase when we are on the line of a function definition with a parameter,
 that parameter is registered to **function's lexical scope as a local variable**.
 
 #### PARAMETER === LOCAL VARIABLE
-Lets try to prove that parameters are local variables in ES5 within example below, we will be taking advantage of scopes and hoisting in ES6 while doing so;
+Lets try to prove that parameters are local variables in ES5 within example below, we will be taking advantage of scope and hoisting while doing so;
   ```js
     var foo = 'global.foo';
     var baz = 'global.baz';
