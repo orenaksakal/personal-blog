@@ -96,7 +96,7 @@ There is one pitfull using function executions as default parameters:
     foo();
 ```
 
-#### YOU CAN USE DECONSTRUCTURING IN DEFAULT PARAMETERS
+#### YOU CAN USE DESTRUCTURING IN DEFAULT PARAMETERS
 
 ```js
     function foo([bar, baz] = [1, 2]) {
