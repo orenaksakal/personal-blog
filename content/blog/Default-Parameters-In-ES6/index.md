@@ -30,9 +30,9 @@ Lets try to prove that parameters are local variables in ES5 within example belo
     console.log(foo, 4); // logs 'global.foo' to prove global foo is not affected
     console.log(baz, 5); // logs 'local.baz' to prove global baz was affected
 ```
-So now we know its true that paramaters are local variables and if we invoke a function **without argument** (undefined argument) 
-our parameter will be initialized as **undefined**. This can cause exceptions if we are not careful enough. We had a solution for this in ES5 with parameter assignmens, lets take a look to example below.
-
+So now we know its true that paramaters are local variables, if we invoke a function **without argument** (undefined argument) 
+our parameter will be initialized as **undefined**. This can cause exceptions if we are not careful enough. 
+We had a solution for this in ES5 with parameter assignmens, lets take a look to example below.
 
 #### ES5 VERSION OF DEFAULT PARAMETERS
 ```js
@@ -48,7 +48,7 @@ our parameter will be initialized as **undefined**. This can cause exceptions if
     greet(); // logs 'Hello King Doe'
 ```
 
-We should make more strict checks and only assign default parameter if parameter is undefined also this is against default airbnb eslint rules as [no-param-reassign](https://eslint.org/docs/rules/no-param-reassign) so we have new syntactically sugared way of doing this in ES6:
+We should make more strict checks and only assign default parameter if parameter is undefined, also parameter re assignment is against default airbnb eslint rules as [no-param-reassign](https://eslint.org/docs/rules/no-param-reassign) so we have new syntactically sugared way of doing this in ES6:
 
 #### ES6 VERSION OF DEFAULT PARAMETERS
 ```js
@@ -62,7 +62,8 @@ We should make more strict checks and only assign default parameter if parameter
 
 There are still few things we should be aware of while using default parameters in ES6
 
-#### DEFAULT PARAMETERS ARE ASSIGNED ONLY IF ARGUMENT IS UNDEFINED !
+**DEFAULT PARAMETERS ARE ASSIGNED ONLY IF ARGUMENT IS UNDEFINED IN ES6 !**
+
 #### YOU CAN ASSIGN FUNCTION INVOCATIONS TO DEFAULT PARAMETERS
 ```js
     function isRequired(field){
@@ -85,7 +86,7 @@ You can use earlier declared paramters in default parameters as the example belo
     autoPluralize('phone'); // PHONES
 ```
 #### WATCHOUT
-There is one pitfull using function executions as default parameters:
+There is one pitfall using function executions as default parameters:
 **Functions defined in function body will throw Referance Error**
 
 ```js

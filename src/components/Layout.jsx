@@ -62,15 +62,7 @@ class Layout extends React.Component {
       >
         {header}
         {children}
-        {/* <footer>
-          <div className="social">twitter • gitlab</div>
-
-          <div className="powered">
-            powered by
-            <a href="//www.gatsbyjs.org"> gatsby </a> &
-            <a href="//www.netlify.com/"> netlify </a>
-          </div>
-        </footer> */}
+        <footer />
       </div>
     )
   }
