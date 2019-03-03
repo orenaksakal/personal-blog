@@ -2,7 +2,7 @@ body {
   background-color: #e8e8e8;
 }
 a {
-  color: #111111;
+  color: #111111!important;
 }
 code[class*='language-'],
 pre[class*='language-'] {
