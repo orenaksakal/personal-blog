@@ -1,6 +1,7 @@
 ---
 title: Default Parameters in ES6
 date: '2019-03-03'
+place: 'Warsaw'
 ---
 
 
@@ -89,7 +90,7 @@ You can use earlier declared paramters in default parameters as the example belo
         console.log('Hello %s', pluralName);
     }
 
-    autoPluralize('phone'); // PHONES
+    autoPluralize('phone'); // logs phones
 ```
 
 #### WATCHOUT
@@ -116,7 +117,6 @@ There is one pitfall using function executions as default parameters:
     foo([3,4]); // logs 7 as expected
 ```
 
-*03.03.2019 - Warsaw*
 # 
 ### Sources you may find useful
 https://www.sitepoint.com/es6-default-parameters/<br/>
